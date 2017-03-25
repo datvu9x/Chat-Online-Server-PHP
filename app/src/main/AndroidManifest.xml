@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="dev.datvt.funnychat">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Funny Chat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.RegisterActivity"/>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
+        <activity android:name=".activities.ChatPersonActivity"/>
+        <activity
+            android:name=".activities.FriendsActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
+        <activity
+            android:name=".activities.InfoActivity"
+            android:label="Thông tin"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.MinWidth"/>
+        <activity
+            android:name=".activities.SendImageActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
+
+        <service android:name=".services.MyService"/>
+    </application>
+
+</manifest>

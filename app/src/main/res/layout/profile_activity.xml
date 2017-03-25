@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e9e9e9"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#e9e9e9">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_conan"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="Dat VIT"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:id="@+id/lnGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/avatar">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_male"/>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Nam"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lnGender"
+            android:layout_below="@+id/lnGender"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/avatar">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_birthday"/>
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="24-06-1995"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lnBirthday"
+            android:layout_below="@+id/lnBirthday"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/avatar">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_address"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Gia Lam - Ha Noi"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlInfo"
+        android:background="#e9e9e9">
+        <include layout="@layout/status_activity"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnTool"
+        android:background="@drawable/border_title"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="See you again !"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMusic"
+        android:layout_marginTop="10dp"
+        android:background="#e9e9e9"
+        android:divider="@null">
+
+    </ListView>
+
+
+</RelativeLayout>

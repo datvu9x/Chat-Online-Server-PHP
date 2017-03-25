@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#cfcece"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4063ff"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Dat Otaku"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/ivReload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/history_disable"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:padding="5dp"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_photo_disable"/>
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:hint="Nói điều gì đó ..."
+                android:inputType="textMultiLine"
+                android:maxHeight="80dp"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:textColor="#1F1F21"
+                android:textColorHint="#b4b0b0"/>
+
+            <requestFocus/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/btn_send_disable"/>
+    </LinearLayout>
+</LinearLayout>

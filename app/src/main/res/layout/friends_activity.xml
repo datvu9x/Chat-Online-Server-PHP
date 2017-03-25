@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#1f61fc"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Danh sách bạn bè"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/lvFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:padding="5dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:text="Thoát"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+</LinearLayout>

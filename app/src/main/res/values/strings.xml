@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FunnyChat</string>
+    <string name="nav_open_drawer">Drawer Opened</string>
+    <string name="nav_close_drawer">Drawer Closed</string>
+    <string name="email"><u>thedat246@gmail.com</u></string>
+</resources>

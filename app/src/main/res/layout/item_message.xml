@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d1cece"
+                android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentWithBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/chat_bubble_me"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:maxWidth="200dp"
+                android:text="Hello !"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="24/06/1995"
+                android:textColor="#716c6c"
+                android:textSize="8sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:background="@drawable/border_avatar"
+            android:layout_marginRight="5dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_shin"/>
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Dat Otaku"
+            android:layout_marginTop="3dp"
+            android:textColor="#0008ff"
+            android:textSize="10sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+</RelativeLayout>

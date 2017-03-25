@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e9e9"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="Bạn có ý tưởng gì?"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e9e9e9"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add_friend"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_alarm_1"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_location_01"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_smile_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:background="#e1dcdc"
+                android:layout_marginLeft="70dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_friend_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Friend"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_dropdown"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_title"
+                android:text="Đăng"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

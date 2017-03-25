@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_info"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/avatar_user"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/img_conan"/>
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/avatar_user"
+            android:text="Dat VIT"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:id="@+id/lnGender_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_user"
+            android:layout_below="@+id/name_user"
+            android:layout_toRightOf="@+id/avatar_user">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_male"/>
+
+            <TextView
+                android:id="@+id/gender_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Nam"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnBirthday_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lnGender_user"
+            android:layout_below="@+id/lnGender_user"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/avatar_user">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_birthday"/>
+
+            <TextView
+                android:id="@+id/birthday_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="24-06-1995"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lnBirthday_user"
+            android:layout_below="@+id/lnBirthday_user"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/avatar_user">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_address"/>
+
+            <TextView
+                android:id="@+id/address_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Gia Lam - Ha Noi"
+                android:textColor="#2B2B2B"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

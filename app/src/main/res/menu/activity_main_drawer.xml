@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/add_danhthiep_o"
+            android:title="Trang cá nhân"/>
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_friend_01"
+            android:title="Danh sách bạn bè"/>
+        <item
+            android:id="@+id/nav_add_friends"
+            android:icon="@drawable/ic_add_friend"
+            android:title="Tìm kiếm bạn mới"/>
+    </group>
+
+    <item android:title="Ứng dụng">
+        <menu>
+            <item
+                android:id="@+id/nav_author"
+                android:icon="@drawable/ic_setting"
+                android:title="Thông tin"/>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_logout"
+                android:title="Đăng xuất"/>
+        </menu>
+    </item>
+
+</menu>

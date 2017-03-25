@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+       android:id="@+id/chat"
+       android:title="Trò chuyện"/>
+    <item
+        android:id="@+id/information"
+        android:title="Xem thông tin"/>
+    <item
+        android:id="@+id/add"
+        android:title="Thêm bạn bè"/>
+</menu>

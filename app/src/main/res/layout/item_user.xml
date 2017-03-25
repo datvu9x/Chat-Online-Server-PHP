@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@null"
+              android:orientation="horizontal"
+              android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_info"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img_conan"/>
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/ivUser"
+            android:layout_weight="1"
+            android:text="Dat VIT"
+            android:textColor="#ff0000"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvNameUser"
+            android:layout_below="@+id/tvNameUser"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_alarm_gray"/>
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="fill_horizontal"
+                android:text="Vừa online"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

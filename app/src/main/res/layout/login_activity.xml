@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#d7d2d2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Funny Chat"
+        android:textColor="#001df9"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_chat">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_account"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#1F1F21"
+                android:textColorHint="#898C90"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_chat">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_pass"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_chat"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#1F1F21"
+                android:textColorHint="#898C90"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="#8fbebdb5"
+            android:paddingRight="5dp">
+
+            <CheckBox
+                android:id="@+id/cbRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nhớ mật khẩu"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_btn_register"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btnMoveRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_move_btn"
+            android:text="Không phải thành viên. Đăng ký ngay bây giờ !"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
